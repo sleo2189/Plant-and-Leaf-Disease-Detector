@@ -19,21 +19,21 @@ The goal is to demonstrate a real-world ML pipeline — from data and model trai
 Create this structure in your local repo folder (e.g. `plant-and-leaf-disease-detector/`):
 
 ```text
-plant-and-leaf-disease-detector/
-├─ .streamlit/
-│  └─ config.toml
-├─ app/
-│  ├─ __init__.py
-│  ├─ model.py
-│  ├─ inference.py
-│  └─ app.py
-├─ notebooks/
-│  └─ train_model.ipynb
+plant_disease_detector/
+├─ data/
+│  ├─ raw/
+│  └─ processed/
 ├─ models/
-│  └─ best_model.pt         # will be added after training
+│  └─ best_model.pt
+├─ src/
+│  ├─ config.py
+│  ├─ data.py
+│  ├─ train.py
+│  ├─ infer.py
+│  └─ api.py
+├─ notebooks/
 ├─ requirements.txt
-├─ README.md
-└─ runtime.txt
+└─ README.md
 ```
 
 You can put all Python files under `app/` so the Streamlit main file is `app/app.py`.
